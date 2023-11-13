@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/OrganizationContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/organization_contact"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            >
+        </TextView>
+
+        <EditText
+            android:id="@+id/OrganizationET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:hint="@string/organization"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:textSize="13sp">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Opportunity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/opportunity"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            >
+        </TextView>
+
+        <EditText
+            android:id="@+id/OpportunityET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:hint="@string/e_g_product_pricing"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="13sp">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/email"
+
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EmailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:hint="@string/e_g_email_address_com"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="13sp">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            >
+        </TextView>
+
+        <EditText
+            android:id="@+id/PhonenumberET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:hint="@string/e_g_0123456789"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textSize="13sp">
+
+        </EditText>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/expectedrev"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/expected_revenue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            >
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EXpectRevET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/_0_00"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp">
+
+            </EditText>
+
+        </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingstar"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:numStars="3"
+                    android:progressBackgroundTint="@color/black"
+                    android:padding="13dp"
+                    android:progressTint="@color/yellow">
+
+                </me.zhanghai.android.materialratingbar.MaterialRatingBar>
+
+
+<!--                <RatingBar-->
+<!--                    android:id="@+id/ratingstar"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:progressTint="@color/yellow"-->
+<!--                    android:progressBackgroundTint="@color/grey"-->
+<!--                    android:scaleX=".5"-->
+<!--                    android:scaleY=".5"-->
+<!--                    android:transformPivotX="0dp"-->
+<!--                    android:transformPivotY="35dp"-->
+<!--                    android:numStars="3"-->
+<!--                    android:stepSize="1">-->
+
+<!--                </RatingBar>-->
+<!--                <RatingBar-->
+<!--                    android:id="@+id/ratingstar"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:progressBackgroundTint="@color/grey"-->
+<!--                    android:progressTint="@color/yellow"-->
+<!--                    android:isIndicator="true"-->
+<!--                    android:numStars=""-->
+<!--                    android:clickable="true"-->
+<!--                    android:stepSize="1">-->
+
+<!--                </RatingBar>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/additem"
+                android:onClick="additemClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_bg_alertbox"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/add">
+
+                </TextView>
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edititem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/menuitemsbg"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+
+              >
+                <LinearLayout
+                    android:id="@+id/deleteitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menuitemsbg"
+                    android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_delete_24">
+
+                </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBAR"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:indeterminateDrawable="@drawable/layout_progressbar">
+
+        </ProgressBar>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

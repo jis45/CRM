@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.internalNotesFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/texticons">
+     <HorizontalScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_header_spinner">
+
+                        <Spinner
+                            android:id="@+id/headerSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:dropDownVerticalOffset="40dp"
+                            android:popupBackground="@color/white"
+                            android:background="@color/white"
+                            android:spinnerMode="dropdown">
+
+                        </Spinner>
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey"
+
+                  />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/adamina"
+                    android:text="B"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                 <TextView
+                     android:layout_width="24dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="5dp"
+                     android:layout_weight="1"
+                     android:fontFamily="@font/adamina"
+                     android:gravity="center"
+                     android:padding="5dp"
+                     android:text="I"
+                     android:textColor="@color/black"
+                     android:textSize="15sp"
+                     android:textStyle="bold|italic">
+
+                 </TextView>
+                <TextView
+                    android:id="@+id/underlineU"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="5dp"
+                    android:text="u"
+                    android:fontFamily="@font/adamina"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/crossline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:text="S"
+                    android:gravity="center"
+                    android:fontFamily="@font/adamina"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="23sp"
+                    android:layout_height="23dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/eraser">
+
+                </ImageView>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="23dp"
+                    android:background="@color/grey"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="5dp"
+                    android:text="A"
+                    android:gravity="center"
+                    android:fontFamily="@font/adamina"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/paintbrush">
+
+                </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+          >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:src="@drawable/baseline_format_list_bulleted_24">
+
+            </ImageView>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:dropDownVerticalOffset="40dp"
+                android:background="@drawable/baseline_arrow_drop_down_24_blue"
+
+                >
+
+            </Spinner>
+
+           </LinearLayout>
+
+                 <View
+                     android:layout_width="1dp"
+                     android:layout_height="23dp"
+                     android:layout_marginTop="5dp"
+                     android:background="@color/grey"
+
+                     />
+                 <ImageView
+                     android:layout_width="23dp"
+                     android:layout_height="23dp"
+                     android:padding="3dp"
+                     android:layout_gravity="center"
+                     android:layout_marginEnd="10dp"
+                     android:layout_marginStart="5dp"
+                     android:src="@drawable/link">
+
+                 </ImageView>
+             </LinearLayout>
+
+         </LinearLayout>
+      </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/texticons">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="10"
+            android:hint="Add a description"
+            android:textColorHint="@color/grey"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tab_indicater"
+            android:gravity="top|start"
+            android:maxLines="15">
+
+        </EditText>
+
+    </LinearLayout>
+
+</RelativeLayout>

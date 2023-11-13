@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Atees Globel CRM</string>
+    <string name="email_username">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirmed_password">Confirm Password</string>
+    <string name="register">REGISTER</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="did_t_get_code">Did\'t Get Code?</string>
+    <string name="_3_00">3:00</string>
+    <string name="new_password">New Password</string>
+    <string name="save_password">SAVE PASSWORD</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">LOGIN</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="email_phonenumber">Email/PhoneNumber</string>
+    <string name="phonenumber">PhoneNumber</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search...</string>
+    <string name="sales">Sales</string>
+    <string name="my_pipeline">My Pipeline</string>
+    <string name="organization_contact">Organization/Contact</string>
+    <string name="organization">organization</string>
+    <string name="opportunity">Opportunity</string>
+    <string name="e_g_product_pricing">e.g. Product Pricing</string>
+    <string name="email">Email</string>
+    <string name="e_g_email_address_com">e.g.\'email@address.com\'</string>
+    <string name="phone">Phone</string>
+    <string name="e_g_0123456789">e.g.\'0123456789\'</string>
+    <string name="expected_revenue">Expected Revenue</string>
+    <string name="_0_00">0.00</string>
+    <string name="add">ADD</string>
+    <string name="edit">EDIT</string>
+    <string name="rateshow">rateshow</string>
+    <string name="delete">Delete</string>
+    <string name="newclick">New</string>
+    <string name="action">Action</string>
+
+    <!--    <string-array name="spinner_leads">-->
+    <!--        <item>Generate Leads</item>-->
+
+
+    <!--    </string-array>-->
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/otpimage"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ateeslog" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/otpimage">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+            app:cardUseCompatPadding="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verify_otp"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary">
+            </TextView>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.chaos.view.PinView
+                    android:id="@+id/otp"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:itemBackground="@drawable/otp_editext"
+                    app:cursorColor="@color/colorPrimary"
+                    app:hideLineWhenFilled="false"
+                    app:itemCount="4"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    app:itemHeight="45dp"
+                    app:itemRadius="10dp"
+                    app:itemSpacing="10dp"
+                    app:viewType="none"
+                    app:itemWidth="45dp">
+
+                </com.chaos.view.PinView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/_3_00"
+                    android:layout_marginStart="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:visibility="gone">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:text="@string/did_t_get_code">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/resntotp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/resend_otp">
+
+                </TextView>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/verifysentotp"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:onClick="verifyclick"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/verify_otp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBAR"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:indeterminateDrawable="@drawable/layout_progressbar">
+
+    </ProgressBar>
+
+
+
+
+</RelativeLayout>

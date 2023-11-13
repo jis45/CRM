@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/mainpart"
+              android:orientation="vertical"
+              >
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/menuicon">
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="7dp"
+                      android:src="@drawable/baseline_apps_24">
+
+                  </ImageView>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_gravity="end"
+                      android:gravity="end"
+                      >
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="10dp"
+                      android:src="@drawable/baseline_notifications_active_24">
+                  </ImageView>
+                      <ImageView
+                          android:layout_width="45dp"
+                          android:layout_height="45dp"
+                          android:padding="10dp"
+                          android:src="@drawable/chat">
+                      </ImageView>
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="10dp"
+                      android:src="@drawable/baseline_access_time_24">
+                  </ImageView>
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="10dp"
+                      android:src="@drawable/baseline_reorder_24">
+
+                  </ImageView>
+                  </LinearLayout>
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp"
+                  android:layout_below="@+id/menuicon">
+
+                  <LinearLayout
+                      android:layout_width="60dp"
+                      android:id="@+id/newitemupload"
+                      android:layout_height="35dp"
+                      android:layout_marginStart="15dp"
+                      android:layout_marginTop="5dp"
+                      android:background="@drawable/menutextbg">
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:text="New"
+                          android:textSize="13sp"
+                          android:fontFamily="@font/poppins"
+                          android:gravity="center"
+                          android:textColor="@color/white">
+
+                      </TextView>
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="40dp"
+                      android:layout_height="35dp"
+                      android:layout_marginStart="2dp"
+                      android:layout_marginTop="5dp"
+                      android:background="@drawable/menutextbg2">
+                      <Spinner
+                          android:id="@+id/leadsgen"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:padding="5dp"
+                          android:dropDownVerticalOffset="40dp"
+                          android:src="@drawable/baseline_arrow_drop_down_24">
+
+                      </Spinner>
+
+                  </LinearLayout>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Pipeline"
+                      android:textSize="12dp"
+                      android:textColor="@color/black"
+                      android:fontFamily="@font/poppins"
+                      android:layout_marginTop="5dp"
+                      android:padding="8dp"
+                      >
+                  </TextView>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                  </LinearLayout>
+
+
+
+
+
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="end"
+                  android:layout_marginEnd="20dp"
+                  android:layout_marginBottom="10dp"
+                  android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="60dp"
+                      android:layout_height="35dp"
+                      android:layout_marginEnd="15dp"
+                      android:layout_marginTop="5dp"
+                      android:gravity="center"
+                      android:orientation="horizontal"
+                      android:background="@drawable/menuitemsbg">
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          >
+                      <ImageView
+                          android:layout_width="25dp"
+                          android:layout_height="25dp"
+                          android:padding="5dp"
+                          android:src="@drawable/baseline_align_vertical_top_24">
+                      </ImageView>
+                      </LinearLayout>
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:layout_marginEnd="10dp">
+                          <Spinner
+                              android:id="@+id/spinner"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:dropDownVerticalOffset="40dp"
+                              android:background="@drawable/bg_spinner"
+
+                             >
+
+                          </Spinner>
+                      </LinearLayout>
+
+<!--                      <ImageView-->
+<!--                          android:layout_width="25dp"-->
+<!--                          android:layout_height="25dp"-->
+<!--                          android:src="@drawable/baseline_arrow_drop_down_24_blue">-->
+
+<!--                      </ImageView>-->
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:id="@+id/search_btn"
+                      android:layout_width="50dp"
+                      android:layout_height="35dp"
+                      android:layout_marginStart="2dp"
+                      android:layout_marginTop="5dp"
+                      android:background="@drawable/menuitemsbg">
+                      <ImageView
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:padding="8dp"
+                          android:src="@drawable/baseline_search_24">
+
+                      </ImageView>
+
+                  </LinearLayout>
+
+              </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/search_bar"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:visibility="gone">
+<!--                  <androidx.cardview.widget.CardView-->
+<!--                      android:id="@+id/searchcard"-->
+<!--                      android:layout_marginTop="10dp"-->
+<!--                      android:layout_marginRight="10dp"-->
+<!--                      android:layout_marginLeft="10dp"-->
+<!--                      android:backgroundTint="@color/white"-->
+<!--                      android:layout_marginBottom="10dp"-->
+<!--                      android:layout_width="match_parent"-->
+<!--                      app:cardCornerRadius="10dp"-->
+<!--                      app:cardElevation="40dp"-->
+<!--                      android:layout_height="wrap_content">-->
+<!--                      <RelativeLayout-->
+<!--                          android:layout_width="match_parent"-->
+<!--                          android:layout_height="wrap_content"-->
+<!--                          android:padding="4dp">-->
+<!--                          <LinearLayout-->
+<!--                              android:id="@+id/searchView"-->
+<!--                              android:layout_width="match_parent"-->
+<!--                              android:layout_height="48dp"-->
+<!--                              android:focusable="true"-->
+<!--                              android:focusableInTouchMode="true"-->
+<!--                              android:clickable="true"-->
+
+<!--                              android:orientation="horizontal"-->
+<!--                              android:padding="4dp"-->
+<!--                              android:gravity="center_vertical">-->
+
+<!--                              <ImageView-->
+<!--                                  android:id="@+id/imgsearch"-->
+<!--                                  android:layout_width="30dp"-->
+<!--                                  android:layout_height="30dp"-->
+<!--                                  android:padding="4dp"-->
+<!--                                  android:visibility="gone"-->
+<!--                                  CircleProgressView:srcCompat="@drawable/baseline_search_24"-->
+<!--                                  app:tint="@color/white" />-->
+
+<!--                              <TextView-->
+<!--                                  android:id="@+id/txthint"-->
+<!--                                  android:layout_width="wrap_content"-->
+<!--                                  android:layout_height="30dp"-->
+<!--                                  android:paddingLeft="24dp"-->
+<!--                                  android:gravity="center_vertical"-->
+<!--                                  android:visibility="gone"-->
+<!--                                  android:text="Search your dream job"/>-->
+
+<!--                              <EditText-->
+<!--                                  android:id="@+id/searchtxt"-->
+<!--                                  android:layout_width="match_parent"-->
+<!--                                  android:gravity="center_vertical"-->
+<!--                                  android:layout_height="30dp"-->
+<!--                                  android:visibility="gone"-->
+<!--                                  android:paddingLeft="4dp"-->
+<!--                                  android:background="@color/white"-->
+<!--                                  android:nextFocusUp="@id/searchtxt"-->
+<!--                                  android:nextFocusLeft="@id/searchtxt"-->
+<!--                                  android:hint="Search your dream job"/>-->
+<!--                              <SearchView-->
+<!--                                  android:id="@+id/searchview"-->
+<!--                                  android:layout_width="match_parent"-->
+<!--                                  android:layout_height="30dp"-->
+<!--                                  android:backgroundTint="@color/white"-->
+<!--                                  android:autofillHints="Search"-->
+<!--                                  android:queryHint="Search.."/>-->
+
+
+<!--                          </LinearLayout>-->
+<!--                          <LinearLayout-->
+<!--                              android:id="@+id/categorylay"-->
+<!--                              android:layout_width="250dp"-->
+<!--                              android:layout_height="30dp"-->
+<!--                              android:gravity="center_vertical"-->
+<!--                              android:orientation="horizontal"-->
+<!--                              android:background="@drawable/rectangle_spinner"-->
+<!--                              android:padding="4dp"-->
+<!--                              android:visibility="gone"-->
+<!--                              android:layout_marginBottom="8dp"-->
+<!--                              android:layout_below="@+id/searchView"-->
+<!--                              android:layout_marginTop="8dp">-->
+
+
+
+<!--                              <ImageView-->
+<!--                                  android:id="@+id/imCloseDesignation"-->
+<!--                                  android:layout_width="24dp"-->
+<!--                                  android:layout_height="24dp"-->
+<!--                                  android:visibility="gone"-->
+<!--                                  android:src="@drawable/baseline_close_24"/>-->
+
+<!--                          </LinearLayout>-->
+
+<!--                          <Button-->
+<!--                              android:id="@+id/btnsearch"-->
+<!--                              android:layout_width="wrap_content"-->
+<!--                              android:layout_height="30sp"-->
+<!--                              android:visibility="gone"-->
+<!--                              android:layout_toEndOf="@+id/categorylay"-->
+<!--                              android:layout_marginLeft="4dp"-->
+<!--                              android:layout_below="@id/searchView"-->
+<!--                              android:layout_alignParentEnd="true"-->
+<!--                              android:background="@drawable/rectangle_spinner"-->
+<!--                              android:layout_marginTop="8dp"-->
+<!--                              android:layout_marginBottom="8dp"-->
+<!--                              android:text="Search"/>-->
+
+<!--                      </RelativeLayout>-->
+<!--                  </androidx.cardview.widget.CardView>-->
+
+
+
+                  <LinearLayout
+                      android:id="@+id/search_bar_text_view"
+                      android:layout_width="match_parent"
+                      android:layout_height="35dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="20dp"
+                      android:layout_marginStart="20dp"
+                      android:focusable="true"
+                      android:focusableInTouchMode="true"
+                      android:clickable="true"
+                      android:layout_marginEnd="20dp"
+                      android:orientation="horizontal"
+                      android:background="@drawable/lineboxbg">
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:orientation="horizontal">
+
+                              <androidx.appcompat.widget.SearchView
+                                  android:id="@+id/search_view"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:pointerIcon="text"
+                                  android:hint="@string/search"
+                                  app:defaultQueryHint="@string/search"
+                                  android:autofillHints="Search"
+                                  app:searchHintIcon="@drawable/baseline_search_24"
+                                  app:queryHint="Search .....">
+
+
+                               </androidx.appcompat.widget.SearchView>
+                      </LinearLayout>
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_weight="7.9"
+                          android:id="@+id/searchlist"
+                          android:layout_gravity="center"
+                          android:background="@drawable/lineboxsearch2">
+                          <ImageView
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_margin="5dp"
+                              android:src="@drawable/baseline_arrow_drop_down_24_blue">
+
+                          </ImageView>
+
+                      </LinearLayout>
+                  </LinearLayout>
+
+              </LinearLayout>
+
+              
+          </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/viewpaperlist">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpaper">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+

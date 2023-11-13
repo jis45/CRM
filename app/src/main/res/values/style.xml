@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="Toast">
+        <item name="stTextColor">@color/colorPrimary</item>
+        <item name="stColorBackground">@color/grey</item>
+        <item name="stIconStart">@drawable/ateeslog</item>
+        <item name="stFont">@font/poppins</item>
+        <item name="iconSize">40dp</item>
+        <item name="stStrokeWidth">1dp</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stTextBold">true</item>
+        <item name="stStrokeColor">#fff</item>
+        <item name="stRadius">10dp</item>
+    </style>
+    <style name="spinner_style">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:dropDownWidth">533dp</item>
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:dropDownHeight">70dp</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@android:color/white</item>
+    </style>
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">#B4B52B</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">11sp</item>
+
+    </style>
+
+</resources>
